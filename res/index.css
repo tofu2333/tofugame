@@ -136,11 +136,7 @@ canvas.gamecanvas {
 }
 
 div.xxl{
-    text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    display: block;
-
-    
+     display: block;
+     margin:0 auto;
 }
 
