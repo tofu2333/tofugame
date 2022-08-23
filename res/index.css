@@ -99,6 +99,7 @@ canvas.gamecanvas {
 
 
 .container {
+    text-align: center;
     margin: 10px 0 0 0;
     padding: 6px 27px;
 }
@@ -132,5 +133,12 @@ canvas.gamecanvas {
 *[data-animation="ripple"]::selection {
 	background: transparent;
 	pointer-events: none;
+}
+
+div.xxl{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    
 }
 
