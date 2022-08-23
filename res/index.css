@@ -134,22 +134,3 @@ canvas.gamecanvas {
 	pointer-events: none;
 }
 
-div.yibanxiong{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    margin-left: 5%;
-    margin-bottom: 5%;
-}
-
-div.youxijieshao{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    padding-right: 15%;
-    font-weight: bold;
-    font-size: 40px;
-    color: rgb(255, 255, 255);
-}
-
-
