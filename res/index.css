@@ -1,0 +1,156 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    /* background-color: #61c4eb; */
+    background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+}
+
+div.main {
+    margin: 0 auto;
+    padding: 0 10px 30px 10px;
+    max-width: 700px;
+    /* background-color: #61C793; */
+    /* line-height: 0; */
+    position: relative;
+}
+
+div.score {
+    /* position: absolute; */
+    z-index: 1001;
+    width: 100%;
+    text-align: center;
+    -webkit-user-select: none;
+    user-select: none;
+    height: auto;
+    padding-bottom: 15px;
+    
+    /* padding-bottom: 15px; */
+}
+
+    div.score > button {
+        margin: 30px 0 0 0;
+        padding: 6px 27px;
+        color: #fff;
+        background-color: #D44A7B;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        outline: none;
+        transition: all 0.3s;
+    }
+
+        div.score > button:active {
+            background-color: #A92453;
+        }
+
+.game-container {
+    position: relative;
+}
+
+canvas.gamecanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    border-radius: 0px;
+    background-color: #6495ED;
+    cursor: default;
+    z-index: 2;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #4169E1 inset;
+}
+
+.score-time {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.score-num {
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    line-height: 0;
+    padding: 20px 0 20px 0;
+}
+
+.score-num > span {
+    font-weight: bold;
+    font-size: 29px;
+    vertical-align: bottom;
+    padding: 0 10px;
+}
+
+    /* .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50px;
+        width: 200px;
+        margin: auto;
+    } */
+
+
+.container {
+    margin: 10px 0 0 0;
+    padding: 6px 27px;
+}
+*[data-animation="ripple"] {
+	height: 40px;
+	width: 100px;
+	display: inline-grid;
+	outline: none;
+	padding: 15px;
+	color: #fff;
+	text-transform: uppercase;
+	background: linear-gradient(135deg, #e570e7 0%,#79f1fc 100%);
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 14px;
+	font-family: roboto, helvetica;
+	font-weight: 200;
+	letter-spacing: 1px;
+	text-decoration: none;
+	box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+  /*border-radius: 50px;*/
+	-webkit-tap-highlight-color: transparent;
+	border-radius: 5px;
+}
+
+*[data-animation="ripple"]:focus {
+	outline: none;
+}
+
+*[data-animation="ripple"]::selection {
+	background: transparent;
+	pointer-events: none;
+}
+
+div.yibanxiong{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+div.youxijieshao{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding-right: 15%;
+    font-weight: bold;
+    font-size: 55px;
+    color: rgb(255, 255, 255);
+}
+
+

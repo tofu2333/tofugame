@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>消消乐 - 电子易班</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <link rel="stylesheet" href="res/index.css" />
+  </head>
+
+  <body>
+    <img src="img/dzyb.png" alt="dzyb" width="45%" />
+    <div class="main">
+      <div class="container">
+        <a id="js-start" data-animation="ripple" style="font-weight: bold"
+          >开始游戏</a
+        >
+        <a id="js-hint" data-animation="ripple" style="font-weight: bold"
+          >提示</a
+        >
+        <a id="js-chint" data-animation="ripple" style="font-weight: bold"
+          >关闭提示</a
+        >
+      </div>
+      <div class="score">
+        <div class="score-num">分数：<span id="js-score-num">0</span> 分</div>
+        <div class="score-time">
+          剩余时间：<span id="js-time-down">0</span> 秒
+        </div>
+      </div>
+      <div class="game-container">
+        <canvas
+          id="js-game"
+          width="300"
+          height="250"
+          class="gamecanvas"
+        ></canvas>
+      </div>
+      <div>
+        <div class="yibanxiong">
+          <img src="img/06.png" alt="ybx" width="75%" />
+        </div>
+        <div class="youxijieshao">
+          <p>消<br />消<br />乐</p>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="yibanxiong">
+      <img src="img/06.png" alt="ybx" width="50%" />
+    </div> -->
+
+    <script src="res/zepto.min.1.1.6.js"></script>
+    <script src="res/easeljs-0.8.2.min.js"></script>
+    <script src="res/tweenjs-0.6.2.min.js"></script>
+    <script src="res/hammer.min.js"></script>
+    <script src="xiaoxiaole.js"></script>
+    <script src="res/button.js"></script>
+    <script type="text/javascript">
+      var xxl = new XiaoXiaoLe(
+        "js-game",
+        "img",
+        {
+          col: 6, //6 columns
+          row: 5, //5 rows
+        },
+        function (score) {
+          //score changed calback
+          $("#js-score-num").text(score);
+        },
+        function (score) {
+          //game end calback
+          alert("游戏结束!!,最终得分： " + score + " 分");
+        },
+        function (time) {
+          $("#js-time-down").text(time);
+        }
+      );
+
+      $("#js-start").click(function () {
+        xxl.start();
+      });
+      $("#js-hint").click(function () {
+        xxl.hint();
+      });
+      $("#js-chint").click(function () {
+        xxl.closeHint();
+      });
+    </script>
+  </body>
+</html>
